@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.20.RELEASE'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'com.github.ben-manes.versions' version '0.21.0'
+}
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'groovy'
+apply plugin: 'org.springframework.boot'
+
+group = 'no.fint.fdk.dkat'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven {
+        url  "http://dl.bintray.com/fint/maven"
+    }
+}
+
+dependencies {
+    compile 'org.projectlombok:lombok'
+    implementation 'org.jooq:jool-java-8:0.9.14'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+    compile('no.fint:fint-springfox-extension:0.0.1')
+    //compile('no.fint:fint-fdk-dcat:1.0.0-rc-6')
+    compile('no.fint:fint-fdk-dcat:0-SNAPSHOT')
+
+    compile 'com.google.api-client:google-api-client:1.28.0'
+    compile 'com.google.oauth-client:google-oauth-client-jetty:1.28.0'
+    compile 'com.google.apis:google-api-services-sheets:v4-rev20190305-1.28.0'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}

@@ -1,0 +1,11 @@
+fint:
+  fdk:
+    dkat:
+      range: 'Dkat!A2:H'
+      spreadsheetId: '1kgeFRBc-GuU64dffs0eGbZgwLjaWn3yJrznJM4NhapE'
+      organisasjonsnavn: FINTLabs
+      organisasjonsnummer: 123456789
+
+security:
+  basic:
+    enabled: false
