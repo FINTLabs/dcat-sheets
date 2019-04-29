@@ -1,6 +1,6 @@
 # dkat-sheets
 
-Web servlet for supplying DKAT resources to https://fellesdatakatalog.brreg.no/
+Web servlet for supplying [DCAT-AP-NO](https://doc.difi.no/dcat-ap-no/) resources to https://fellesdatakatalog.brreg.no/
 based on information from a Google Sheet.
 
 ## Getting started
