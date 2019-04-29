@@ -1,9 +1,6 @@
 package no.fint.fdk.dkat.dkatsheets;
 
-import no.fint.fdk.CatalogBuilder;
-import no.fint.fdk.DatasetBuilder;
-import no.fint.fdk.OrganisationBuilder;
-import no.fint.fdk.OrganisationDataCatalogBuilder;
+import no.fint.fdk.*;
 import org.apache.jena.rdf.model.Model;
 import org.jooq.lambda.function.Function2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +56,10 @@ public class ModelService {
         Map<String, Model> datasetModels = getDatasetModels(uri, dataset);
 
         CatalogBuilder.CatalogResourceBuilder catalog = CatalogBuilder.builder()
-                .organisation(uri);
+                .organisation(uri)
+                .publisher(Utilities.getOrganisationResourceURI(organisasjonsnummer), organisasjonsnavn)
+                .title(organisasjonsnavn)
+                .description("Datasett for " + organisasjonsnavn);
 
         datasetModels.forEach((id, model) -> catalog.dataset(id));
 
