@@ -1,4 +1,4 @@
-package no.fint.fdk.dkat.dkatsheets;
+package no.fint.fdk.dcat.dcatsheets;
 
 import no.fint.fdk.*;
 import org.apache.jena.rdf.model.Model;
@@ -19,10 +19,10 @@ import java.util.stream.Collectors;
 @Service
 public class ModelService {
 
-    @Value("${fint.fdk.dkat.organisasjonsnummer}")
+    @Value("${fint.fdk.dcat.organisasjonsnummer}")
     private String organisasjonsnummer;
 
-    @Value("${fint.fdk.dkat.organisasjonsnavn}")
+    @Value("${fint.fdk.dcat.organisasjonsnavn}")
     private String organisasjonsnavn;
 
     @Autowired

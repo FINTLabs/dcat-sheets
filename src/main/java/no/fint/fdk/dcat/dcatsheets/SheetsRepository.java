@@ -1,4 +1,4 @@
-package no.fint.fdk.dkat.dkatsheets;
+package no.fint.fdk.dcat.dcatsheets;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -29,14 +29,14 @@ import java.util.List;
 @Repository
 @Slf4j
 public class SheetsRepository {
-    private static final String APPLICATION_NAME = "FDK DKAT Google Sheets Repository";
+    private static final String APPLICATION_NAME = "FDK DCAT Google Sheets Repository";
     private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
 
-    @Value("${fint.fdk.dkat.spreadsheetId}")
+    @Value("${fint.fdk.dcat.spreadsheetId}")
     private String spreadsheetId;
 
-    @Value("${fint.fdk.dkat.range}")
+    @Value("${fint.fdk.dcat.range}")
     private String range;
 
     @PostConstruct

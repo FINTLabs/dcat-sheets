@@ -1,4 +1,4 @@
-package no.fint.fdk.dkat.dkatsheets;
+package no.fint.fdk.dcat.dcatsheets;
 
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.riot.Lang;

@@ -1,4 +1,4 @@
-package no.fint.fdk.dkat.dkatsheets;
+package no.fint.fdk.dcat.dcatsheets;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DkatSheetsApplicationTests {
+public class DcatSheetsApplicationTests {
 
 	@Test
 	public void contextLoads() {

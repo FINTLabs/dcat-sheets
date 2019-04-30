@@ -17,7 +17,7 @@ apply plugin: 'maven'
 apply plugin: 'groovy'
 apply plugin: 'org.springframework.boot'
 
-group = 'no.fint.fdk.dkat'
+group = 'no.fint.fdk.dcat'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
