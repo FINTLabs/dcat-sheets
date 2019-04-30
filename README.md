@@ -1,4 +1,4 @@
-# dkat-sheets
+# dcat-sheets
 
 Web servlet for supplying [DCAT-AP-NO](https://doc.difi.no/dcat-ap-no/) resources to https://fellesdatakatalog.brreg.no/
 based on information from a Google Sheet.
