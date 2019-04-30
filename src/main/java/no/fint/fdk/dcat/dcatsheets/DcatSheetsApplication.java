@@ -1,13 +1,13 @@
-package no.fint.fdk.dkat.dkatsheets;
+package no.fint.fdk.dcat.dcatsheets;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DkatSheetsApplication {
+public class DcatSheetsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DkatSheetsApplication.class, args);
+		SpringApplication.run(DcatSheetsApplication.class, args);
 	}
 
 }
